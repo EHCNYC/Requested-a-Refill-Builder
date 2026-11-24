@@ -481,7 +481,7 @@ function refillBlock(s) {
   const msg = s.formMsg ? callout(s.formMsg, 22) : '';
   const phone = `<tr><td style="padding:${s.formMsg ? 16 : 22}px 30px 0;font-family:${F};font-size:15px;line-height:23px;font-style:italic;color:${C.ink};">&#128222; ${esc(CONFIG.orderByPhone)}</td></tr>`;
   const programs = url ? `<tr><td align="center" style="padding:16px 30px 0;font-family:${F};font-size:17px;line-height:25px;font-weight:700;text-align:center;color:${C.ink};">Click <a href="${esc(url)}" target="_blank" style="color:${C.accentDark};font-weight:700;text-decoration:underline;">here</a> to view our programs!</td></tr>` : '';
-  const weeks = `<tr><td align="center" style="padding:16px 30px 0;font-family:${F};font-size:17px;line-height:25px;font-weight:700;text-align:center;color:${C.ink};">Click <a href="${esc(CONFIG.treatmentWeeksUrl)}" target="_blank" style="color:${C.accentDark};font-weight:700;text-decoration:underline;">here</a> to calculate the # of weeks for your treatment.</td></tr>`;
+  const weeks = `<tr><td align="center" style="padding:16px 30px 0;font-family:${F};font-size:17px;line-height:25px;font-weight:700;text-align:center;color:${C.ink};">Click <a href="${esc(CONFIG.treatmentWeeksUrl)}" target="_blank" style="color:${C.accentDark};font-weight:700;text-decoration:underline;">here</a> to calculate the # of weeks for your weight-loss program.</td></tr>`;
   return msg + phone + programs + weeks + notice(CONFIG.clearanceNote, 18);
 }
 
